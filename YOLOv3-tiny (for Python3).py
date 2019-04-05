@@ -32,8 +32,7 @@ while True:
                 im = cv2.imread('predictions.png')
                 cv2.imshow('yolov3-tiny',im)
                 key = cv2.waitKey(5)
-            except Exception as e:
-                print(e)
+            except Exception:
                 pass
                
         if len(stdout.strip())>0:
