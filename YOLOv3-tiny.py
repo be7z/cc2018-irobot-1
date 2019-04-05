@@ -81,14 +81,12 @@ while True:
             #cv2.imshow('mask', mask)
             #cv2.imshow('cam', cam)
             key = cv2.waitKey(2)
-            
-        print('test4')
+        
         # output analyse
         if len(stdout.strip()) > 0:
             print('get %s' % stdout)
             if gr == 1:
                 print('---------- Green Bottle - %d ----------' % w)
     except Exception:
-        print('ee')
         pass
 
